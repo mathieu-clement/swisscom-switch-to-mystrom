@@ -18,7 +18,7 @@ ADD . /project
 
 RUN apk add --no-cache curl
 
-ENV LISTEN_HOST 127.0.0.123
-ENV LISTEN_PORT 5002
+ENV LISTEN_HOST 0.0.0.0
+ENV LISTEN_PORT 5000
 
 ENTRYPOINT python app.py
