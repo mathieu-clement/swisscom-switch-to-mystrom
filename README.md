@@ -122,8 +122,10 @@ for a possible workaround.
 While the proxy will only be accessible by Home Assistant, do note that all myStrom and Swisscom Home smart switches are
 publicly accessible on your network. You might be able to set a password (often called "token", but a static token 
 is just a fancy name for a password) but it will be transferred in clear text over the network anyway and easily sniffed. 
-I'm not an expert in networking but as far as I know there's not much you can do here beside having a separate SSID and 
-setting up a VLAN between that and your Home Assistant host. This is also valid for unencrypted traffic from
+I'm not an expert in networking but as far as I know there's not much you can do here beside 
+having a separate SSID and setting up a VLAN between that and your Home Assistant host. 
+
+This is also valid for unencrypted traffic from
 non-IoT devices such as your computer or phone by the way, unless you are using 802.1X and RADIUS-based authentication on
 your network, which IoT devices typically don't support. That's because your typical WiFI network is using a _shared_ key (WPA2-PSK). 
 That's at least until WPA3 gets deployed.
