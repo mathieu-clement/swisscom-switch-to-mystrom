@@ -5,6 +5,10 @@
 This is a very minimal Flask web application that answers requests made by the Home Assistant integration for
 myStrom smart switches by forwarding them to a Swisscom Home Smart Switch.
 
+I only implemented the minimum necessary to get the myStrom Home Assistant Integration working. Depending on which myStrom client you use, this might not be enough.
+
+In any case, you won't be able to control the Swisscom Home Smart Switch in the myStrom app. There might be a way to do this, but I'm not interested in it as all my devices are federated in Home Assistant.
+
 ## Why
 
 Swisscom Home Smart Switches normally require a Swisscom Internet-Box and the Android/iOS Swisscom Home App
