@@ -15,7 +15,7 @@ The API for Swisscom Switches seems to be -- for the most part -- identical to t
 
 ## Configuration
 
-## Smart Switch
+### Smart Switch
 
 1. Press and hold the button on the side of the switch and plug it into an outlet until the red light starts flashing.
 The switch is now in Access Point mode.
