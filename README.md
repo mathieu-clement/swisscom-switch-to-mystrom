@@ -19,7 +19,7 @@ The API for Swisscom Switches seems to be -- for the most part -- identical to t
 
 1. Press and hold the button on the side of the switch and plug it into an outlet until the red light starts flashing.
 The switch is now in Access Point mode.
-2. From your _computer_, verify you can open http://192.168.254.1
+2. From your _computer_, connect to the "Switch-XXYYZZ" Wi-Fi network and verify that you can browse http://192.168.254.1
 3. Set your Wi-Fi SSID and password:
 
 ```bash
