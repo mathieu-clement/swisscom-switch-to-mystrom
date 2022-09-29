@@ -99,7 +99,7 @@ switch:
 ```
 
 If running Home Assistant in Docker, you will have to use the "Bridge" network, so that you can connect to the
-private Docker network as well. After launching your HA container, issue the following command:
+private Docker network as well, and expose port 8123 (TCP). After launching your HA container, issue the following command:
 
 ```docker network connect --ip 172.20.0.11 <network> <container>```
 
