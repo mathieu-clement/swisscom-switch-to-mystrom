@@ -1,7 +1,7 @@
 ARG APP_IMAGE=python:3.9-alpine
 
 FROM $APP_IMAGE AS base
-FROM base as builder
+FROM base AS builder
 
 RUN mkdir /install
 WORKDIR /install
@@ -11,14 +11,14 @@ COPY requirements.txt /requirements.txt
 RUN pip install --prefix=/install -r /requirements.txt
 
 FROM base
-ENV FLASK_APP app.py
+ENV FLASK_APP=app.py
 WORKDIR /project
 COPY --from=builder /install /usr/local
 ADD . /project
 
 RUN apk add --no-cache curl
 
-ENV LISTEN_HOST 0.0.0.0
-ENV LISTEN_PORT 5000
+ENV LISTEN_HOST=0.0.0.0
+ENV LISTEN_PORT=5000
 
-ENTRYPOINT python app.py
+ENTRYPOINT ["python", "app.py"]
